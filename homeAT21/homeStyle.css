@@ -1,0 +1,76 @@
+body {
+    font-family: 'Inknut Antiqua', serif;
+    color: #002355;
+}
+
+h1 {
+    font-weight: bold; /* Aplica negrita al h1 */
+    color: #002355;
+}
+
+ul {
+    list-style-type: none; /* Elimina los puntos por defecto */
+    padding-left: 0; /* Elimina el margen izquierdo por defecto */
+}
+
+ul li {
+    position: relative;
+    padding-left: 20px; /* Espacio para el ícono */
+}
+
+ul li::before {
+    content: '♦'; /* Carácter de rombo */
+    position: absolute;
+    left: 0;
+    top: 0;
+    font-size: 20px; /* Tamaño del rombo */
+    color: #559BFE; /* Color del rombo */
+}
+
+header img {
+    width: 100%; /* Hace que la imagen ocupe todo el ancho de la página */
+    height: auto; /* Mantiene la proporción de la imagen */
+    display: block; /* Evita espacios adicionales debajo de la imagen */
+}
+
+.rectangulo {
+    width: 1215px;
+    height: 148px;
+    background-color: #559BFE; /* Azul */
+    margin: 20px auto; /* Centrado horizontal */
+    border-radius: 20px; /* Bordes curvos */
+}
+
+.menu-botones {
+    display: flex;
+    justify-content: space-around; /* Distribuye los botones equitativamente */
+    align-items: center;
+    height: 100%;
+}
+
+.menu-botones a {
+    text-decoration: none;
+    color: #002355;
+    font-weight: bold;
+    text-align: center;
+    font-size: 14px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.menu-botones img {
+    width: 50px; /* Ajusta el tamaño de los íconos */
+    height: 50px;
+    margin-bottom: 5px;
+}
+
+
+main {
+    text-align: center; /* Centra todo el texto dentro del main */
+}
+
+ul {
+    display: inline-block; /* Permite que la lista se centre dentro del main */
+    text-align: left; /* Mantiene la alineación del texto dentro de la lista */
+}
