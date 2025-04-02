@@ -1,0 +1,5 @@
+header img {
+    width: 100%; /* Hace que la imagen ocupe todo el ancho de la página */
+    height: auto; /* Mantiene la proporción de la imagen */
+    display: block; /* Evita espacios adicionales debajo de la imagen */
+}

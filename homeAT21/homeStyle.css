@@ -65,6 +65,10 @@ header img {
     margin-bottom: 5px;
 }
 
+/* Efecto hover */
+.menu-botones a:hover img {
+    transform: scale(1.1); /* Hace el ícono más grande al pasar el mouse */
+}
 
 main {
     text-align: center; /* Centra todo el texto dentro del main */
@@ -73,4 +77,49 @@ main {
 ul {
     display: inline-block; /* Permite que la lista se centre dentro del main */
     text-align: left; /* Mantiene la alineación del texto dentro de la lista */
+}
+
+/* Rectángulo del footer */
+.rectangulo-footer {
+    width: 1215px;
+    height: 148px;
+    background-color: #559BFE; /* Azul */
+    margin: 20px auto; /* Centrado horizontal */
+    border-radius: 20px; /* Bordes curvos */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Contenedor de redes sociales */
+.redes-sociales {
+    display: flex;
+    justify-content: space-around; /* Distribuye los botones */
+    align-items: center;
+    width: 80%;
+}
+
+/* Estilos de los enlaces */
+.redes-sociales a {
+    text-decoration: none;
+    color: #002355;
+    font-weight: bold;
+    text-align: center;
+    font-size: 14px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Estilos de las imágenes */
+.redes-sociales img {
+    width: 50px; /* Tamaño de los íconos */
+    height: 50px;
+    margin-bottom: 5px;
+    transition: transform 0.3s ease-in-out;
+}
+
+/* Efecto hover */
+.redes-sociales a:hover img {
+    transform: scale(1.1); /* Hace el ícono más grande al pasar el mouse */
 }

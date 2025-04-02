@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login y Registro</title>
+    <link rel="stylesheet" href="../loginRegistro/loginRegistoStyle.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inknut+Antiqua:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <img src="../public/logo/21.png" alt="Logo AT21">
+    </header>
+    <main>
+        <section class="left-side">
+            <h2>LOGIN</h2>
+        <!-- Formulario de Login -->
+        <form action="../homeAT21/home.html" method="GET"> <!-- method="GET" porque solo queremos redirigir sin procesar datos en el servidor -->
+            <div class="input-group">
+                <label for="email">Correo Electrónico:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+
+            <div class="input-group">
+                <label for="password">Contraseña:</label>
+                <input type="password" id="password" name="password" required>
+            </div>
+
+            <button type="submit">LOGIN</button>
+        </form>
+        </section>
+        
+        <section class="right-side">
+            <h2>REGISTRO</h2>
+                    <!-- Formulario de Registro -->
+        <form action="../homeAT21/home.html" method="GET"> <!-- method="GET" porque solo queremos redirigir sin procesar datos en el servidor -->
+            <div class="input-group">
+                <label for="nombres">Nombres:</label>
+                <input type="nombres" id="nombres" name="nombres" required>
+            </div>
+            
+            <div class="input-group">
+                <label for="apellidos">Apellidos:</label>
+                <input type="apellidos" id="apellidos" name="apellidos" required>
+            </div>
+
+            <div class="input-group">
+                <label for="celular">Celular:</label>
+                <input type="celular" id="celular" name="celular" required>
+            </div>
+
+            <div class="input-group">
+                <label for="email">Correo Electrónico:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+
+            <div class="input-group">
+                <label for="password">Contraseña:</label>
+                <input type="password" id="password" name="password" required>
+            </div>
+
+            <button type="submit">REGISTRO</button>
+        </form>
+        </section>   
+    </main>
+    <footer>
+        <div class="rectangulo-footer">
+            <nav class="redes-sociales">
+                <a href="../contactanos/contactanos.html">
+                    <img src="../public/redes/bxl-facebook-circle.svg" alt="Facebook">
+                    <span>Facebook</span>
+                </a>
+                <a href="../contactanos/contactanos.html">
+                    <img src="../public/redes/bxl-instagram-alt.svg" alt="Instagram">
+                    <span>Instagram</span>
+                </a>
+                <a href="../contactanos/contactanos.html">
+                    <img src="../public/redes/bxl-linkedin-square.svg" alt="LinkedIn">
+                    <span>LinkedIn</span>
+                </a>
+                <a href="../contactanos/contactanos.html">
+                    <img src="../public/redes/bxl-whatsapp-square.svg" alt="WhatsApp">
+                    <span>WhatsApp</span>
+                </a>
+            </nav>
+        </div>
+        <p>&copy; 2025 Artículos Tecnológicos 21. Todos los derechos reservados.</p>
+    </footer>
+</body>
+</html>
