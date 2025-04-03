@@ -1,3 +1,10 @@
+header img {
+    width: 100%;   /* Mantiene el ancho al 100% de la pantalla */
+    height: 400px; /* Fija la altura en 326px */
+    object-fit: cover; /* Evita la distorsión de la imagen */
+    display: block;  /* Elimina espacios extra debajo de la imagen */
+}
+
 body {
     font-family: 'Inknut Antiqua', serif;
     color: #002355;
@@ -25,12 +32,6 @@ ul li::before {
     top: 0;
     font-size: 20px; /* Tamaño del rombo */
     color: #559BFE; /* Color del rombo */
-}
-
-header img {
-    width: 100%; /* Hace que la imagen ocupe todo el ancho de la página */
-    height: auto; /* Mantiene la proporción de la imagen */
-    display: block; /* Evita espacios adicionales debajo de la imagen */
 }
 
 .rectangulo {
