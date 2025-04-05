@@ -1,0 +1,153 @@
+header img {
+    width: 100%;   /* Mantiene el ancho al 100% de la pantalla */
+    height: 400px; /* Fija la altura en 326px */
+    object-fit: cover; /* Evita la distorsión de la imagen */
+    display: block;  /* Elimina espacios extra debajo de la imagen */
+}
+
+body {
+    font-family: 'Inknut Antiqua', serif;
+    color: black;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.contenedor {
+    display: grid;
+    position: relative;
+    width: 1400px;
+    height: 850px;
+    top: 50px;
+    margin: auto;
+    grid-template-columns: repeat(2, 700px);
+    grid-template-rows: repeat(2, 425px);
+    gap: 10px;
+}
+
+.imagen-container {
+    position: absolute;
+    width: 700px;
+    height: 425px;
+}
+
+.imagen {
+    margin-top: 37.5px;
+    margin-left: 50px;
+    position: absolute;
+    border: 1px solid #333; /* Borde alrededor de la imagen */
+    width: 600px; /* Ajusta el tamaño de la imagen */
+    height: 350px;
+    object-fit: contain; /* Para que la imagen no pierda su calidad y conserve su relación de aspecto */
+}
+
+.texto-arriba-derecha {
+    position: absolute;
+    width: 700px;
+    height: 425px;
+    left: 700px;
+    font-size: 14px;
+    text-align: left;
+}
+
+.texto-arriba-derecha h1 {
+    margin-top: 20px;
+    margin-left: 50px;
+    margin-right: 50px;
+    font-size: 20px;
+}
+
+.texto-arriba-derecha h2 {
+    font-size: 18px;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+.texto-arriba-derecha h3 {
+    font-size: 16px;
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-bottom: 37.5px;
+}
+
+.texto-arriba-derecha ul {
+    list-style-type: disc;
+    padding-left: 20px;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+.texto-abajo-izquierda {
+    position: absolute;
+    width: 700px;
+    height: 425px;
+    top: 425px;
+    font-size: 14px;
+}
+
+.texto-abajo-izquierda h1 {
+    font-size: 20px;
+    margin-top: 37.5px;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+.texto-abajo-izquierda p {
+    font-size: 14px;
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-bottom: 37.5px;
+}
+
+.botones {
+    position: absolute;
+    width: 700px;
+    height: 425px;
+    top: 425px;
+    left: 700px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.boton {
+    margin-top: 50px;
+    margin-bottom: 20px;
+    font-size: 14px;
+    cursor: pointer;
+    background-color: #0046AA;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-family: 'Inknut Antiqua', serif;
+    width: 600px;
+}
+
+.boton2 {
+    margin-bottom: 20px;
+    font-size: 14px;
+    cursor: pointer;
+    background-color: #006AFF;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-family: 'Inknut Antiqua', serif;
+    width: 600px;
+}
+
+.boton:hover {
+    background-color: #A9CDFF;
+    color: black;
+}
+
+.boton2:hover {
+    background-color: #A9CDFF;
+    color: black;
+}
+
+footer {
+    margin-top: 75px;
+}
