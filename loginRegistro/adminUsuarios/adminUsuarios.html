@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Administrador de Usuarios</title>
+  <link rel="stylesheet" href="adminUsuariosStyle.css">
+</head>
+<body>
+    <header>
+        <img src="../../public/logo/21.png" alt="Logo AT21">
+    </header>
+
+  <div class="contenedor-principal">
+
+    <!-- SIDEBAR / PANEL IZQUIERDO -->
+    <aside class="sidebar">
+      <div class="logo-container">
+        <img src="../detallePerfil/img/a.png" alt="Logo">
+
+        <h1>Usuarios registrados</h1>
+
+      </div>
+      <nav class="menu">
+        <ul>
+          <li><a href="#">Ver activos</a></li>
+          <li><a href="#">Ventas</a></li>
+          <li><a href="#">Ver usuarios</a></li>
+          <li><a href="#">Inventarios</a></li>
+        </ul>
+      </nav>
+    </aside>
+
+    <!-- CONTENIDO PRINCIPAL -->
+    <main class="contenido">
+      <h1>Gestión de Usuarios</h1>
+
+      <table class="tabla-usuarios">
+        <thead>
+          <tr>
+            <th>ID</th>
+            <th>Nombre</th>
+            <th>Rol</th>
+            <th>Correo</th>
+            <th>Acciones</th>
+          </tr>
+        </thead>
+        <tbody>
+          <!-- Aquí irán las filas dinámicas o de ejemplo -->
+          <tr>
+            <td>001</td>
+            <td>Juan Pérez</td>
+            <td>Administrador</td>
+            <td>juan@example.com</td>
+            <td>
+              <button class="editar">Editar</button>
+              <button class="eliminar">Eliminar</button>
+            </td>
+          </tr>
+          <tr>
+            <td>002</td>
+            <td>María Gómez</td>
+            <td>Vendedor</td>
+            <td>maria@example.com</td>
+            <td>
+              <button class="editar">Editar</button>
+              <button class="eliminar">Eliminar</button>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </main>
+
+  </div>
+
+</body>
+</html>
