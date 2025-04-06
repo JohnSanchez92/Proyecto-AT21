@@ -1,0 +1,186 @@
+/* === Variables === */
+:root {
+    --gris-claro: #DEDEE4;
+    --azul-principal: #456990;
+    --gris-oscuro: #222;
+    --blanco: #ffffff;
+  }
+  
+  body {
+    margin: 0;
+    font-family: 'Inknut Antiqua', serif;
+    background-color: var(--gris-claro);
+  }
+  
+  header img {
+    width: 100%;   /* Mantiene el ancho al 100% de la pantalla */
+    height: 400px; /* Fija la altura en 326px */
+    object-fit: cover; /* Evita la distorsión de la imagen */
+    display: block;  /* Elimina espacios extra debajo de la imagen */
+}
+  
+  .contenedor {
+    display: flex;
+    min-height: 90vh;
+  }
+  
+  .panel-izquierdo {
+    flex: 1;
+    padding: 2rem;
+    background-color: var(--azul-principal);
+    color: var(--blanco);
+  }
+  
+  .avatar {
+    width: 100px;
+    border-radius: 50%;
+    margin-bottom: 1rem;
+  }
+  
+  .panel-izquierdo form label,
+  .panel-izquierdo form input {
+    display: block;
+    margin-bottom: 0.5rem;
+  }
+  
+  .panel-izquierdo input {
+    width: 100%;
+    padding: 0.4rem;
+    margin-bottom: 1rem;
+  }
+  
+  .panel-izquierdo button {
+    background-color: var(--gris-oscuro);
+    color: var(--blanco);
+    border: none;
+    padding: 0.6rem;
+    cursor: pointer;
+  }
+  
+  .opciones h3 {
+    margin-top: 1.5rem;
+  }
+  
+  .panel-derecho {
+    flex: 2;
+    padding: 2rem;
+    background-color: var(--blanco);
+  }
+  
+  .filtros label,
+  .filtros select {
+    display: block;
+    margin-bottom: 0.5rem;
+  }
+  
+  .productos {
+    list-style: none;
+    padding: 0;
+    margin-top: 1rem;
+  }
+  
+  .productos li {
+    padding: 0.5rem;
+    border-bottom: 1px solid #ccc;
+  }
+  
+  footer {
+    background-color: var(--gris-oscuro);
+    color: var(--blanco);
+    text-align: center;
+    padding: 1rem;
+  }
+  
+
+  /* FORMULARIO EN PANEL IZQUIERDO */
+.panel-izquierdo form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .panel-izquierdo form label {
+    font-weight: bold;
+    margin-top: 1rem;
+  }
+  
+  .panel-izquierdo form input {
+    width: 100%;
+    padding: 0.6rem;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+  }
+  
+  .panel-izquierdo form input:focus {
+    outline: none;
+    border-color: var(--blanco);
+    box-shadow: 0 0 5px var(--blanco);
+    background-color: #f9f9f9;
+  }
+  
+  /* BOTÓN ACTUALIZAR PERFIL */
+  .panel-izquierdo button {
+    background-color: var(--gris-oscuro);
+    color: var(--blanco);
+    border: none;
+    padding: 0.8rem;
+    border-radius: 8px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 1rem;
+    transition: background-color 0.3s ease;
+  }
+  
+  .panel-izquierdo button:hover {
+    background-color: #333;
+  }
+  
+  .filtros {
+    background-color: #f4f4f4;
+    padding: 1rem;
+    border-radius: 10px;
+    box-shadow: 0 0 8px rgba(0,0,0,0.1);
+    margin-bottom: 2rem;
+  }
+  
+  .filtros h4 {
+    margin-top: 1rem;
+    color: var(--azul-principal);
+  }
+  
+  .filtros label,
+  .filtros select {
+    font-size: 0.95rem;
+    margin-bottom: 0.5rem;
+  }
+
+  
+  .productos {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 1rem;
+  }
+  
+  .productos li {
+    background-color: #fff;
+    padding: 1rem;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    text-align: center;
+    font-weight: bold;
+    color: var(--gris-oscuro);
+    transition: transform 0.2s ease;
+  }
+  
+  .productos li:hover {
+    transform: scale(1.05);
+  }
+  .productos li img {
+    width: 100%;
+    max-height: 120px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 0.5rem;
+  }
+    

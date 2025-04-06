@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Perfil de Usuario</title>
+  <link rel="stylesheet" href="detalleSyle.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inknut+Antiqua&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <img src="img/21.png" alt="Logo AT21">
+    </header>
+
+  <main class="contenedor">
+    <!-- Panel Izquierdo -->
+    <section class="panel-izquierdo">
+      <img src="img/a.png" alt="Avatar del usuario" class="avatar">
+      <form>
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" name="nombre">
+
+        <label for="celular">Celular:</label>
+        <input type="text" id="celular" name="celular">
+
+        <label for="correo">Correo:</label>
+        <input type="email" id="correo" name="correo">
+
+        <label for="contrasena">Contraseña:</label>
+        <input type="password" id="contrasena" name="contrasena">
+
+        <button type="submit">Actualizar Perfil</button>
+      </form>
+
+      <div class="opciones">
+        <h3>Mis compras</h3>
+        <label><input type="checkbox"> Pedidos</label>
+        <label><input type="checkbox"> Historial</label>
+
+        <h3>Datos del perfil</h3>
+        <label><input type="checkbox"> Dirección</label>
+        <label><input type="checkbox"> Tarjetas</label>
+        <label><input type="checkbox"> Privacidad</label>
+        <label><input type="checkbox"> Notificaciones</label>
+      </div>
+    </section>
+
+    <!-- Panel Derecho -->
+    <section class="panel-derecho">
+      <h2>Filtros</h2>
+      <div class="filtros">
+        <h4>Marca</h4>
+        <label><input type="checkbox"> LG</label>
+        <label><input type="checkbox"> Samsung</label>
+        <label><input type="checkbox"> Asus</label>
+
+        <h4>Precio</h4>
+        <select>
+          <option>Menor a mayor</option>
+          <option>Mayor a menor</option>
+        </select>
+
+        <h4>Orden alfabético</h4>
+        <select>
+          <option>A - Z</option>
+          <option>Z - A</option>
+        </select>
+      </div>
+
+      <h2>Productos</h2>
+      <ul class="productos">
+        <li>
+            <img src="img/p1.png" alt="Producto1">
+            BOARD ASROCK
+        </li>
+        <li>
+            <img src="img/p2.png" alt="Producto2">
+            BOARD ASUS
+        </li>
+        <li>
+            <img src="img/p3.png" alt="Producto3">
+            DDR4 32G
+        </li>
+        <li>
+            <img src="img/p4.png" alt="Producto4">
+            DISCO 1T
+        </li>
+        <li>
+            <img src="img/p5.png" alt="Producto5">
+            DISCO 500G
+        </li>
+        <li>
+            <img src="img/p6.png" alt="Producto6">
+            DDR4 16G
+        </li>
+      </ul>
+    </section>
+  </main>
+
+  <footer>
+    <div class="rectangulo-footer">
+        <nav class="redes-sociales">
+            <a href="../contactanos/contactanos.html">
+                <img src="../public/redes/bxl-facebook-circle.svg" alt="Facebook">
+                <span>Facebook</span>
+            </a>
+            <a href="../contactanos/contactanos.html">
+                <img src="../public/redes/bxl-instagram-alt.svg" alt="Instagram">
+                <span>Instagram</span>
+            </a>
+            <a href="../contactanos/contactanos.html">
+                <img src="../public/redes/bxl-linkedin-square.svg" alt="LinkedIn">
+                <span>LinkedIn</span>
+            </a>
+            <a href="../contactanos/contactanos.html">
+                <img src="../public/redes/bxl-whatsapp-square.svg" alt="WhatsApp">
+                <span>WhatsApp</span>
+            </a>
+        </nav>
+    </div>
+    <p>&copy; 2025 Artículos Tecnológicos 21. Todos los derechos reservados.</p>
+</footer>
+</body>
+</html>
