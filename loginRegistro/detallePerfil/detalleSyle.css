@@ -1,29 +1,33 @@
-/* === Variables === */
+/* === VARIABLES GLOBALES tomadas de la paleta de colores */
 :root {
-    --gris-claro: #DEDEE4;
-    --azul-principal: #456990;
-    --gris-oscuro: #222;
-    --blanco: #ffffff;
+    --gris-claro: #DEDEE4;       /* Color de fondo principal */
+    --azul-principal: #456990;   /* Color de fondo para panel izquierdo */
+    --gris-oscuro: #222;         /* Color del footer y botones */
+    --blanco: #ffffff;           /* Color base blanco */
   }
   
+  /* === ESTILOS GENERALES === */
   body {
     margin: 0;
     font-family: 'Inknut Antiqua', serif;
     background-color: var(--gris-claro);
   }
   
+  /* === HEADER === */
   header img {
-    width: 100%;   /* Mantiene el ancho al 100% de la pantalla */
-    height: 400px; /* Fija la altura en 326px */
-    object-fit: cover; /* Evita la distorsión de la imagen */
-    display: block;  /* Elimina espacios extra debajo de la imagen */
-}
-  
-  .contenedor {
-    display: flex;
-    min-height: 90vh;
+    width: 100%;             /* Imagen cubre todo el ancho */
+    height: 400px;           /* Altura fija */
+    object-fit: cover;       /* Mantiene proporciones sin distorsión */
+    display: block;          /* Elimina espacio extra */
   }
   
+  /* === CONTENEDOR PRINCIPAL === */
+  .contenedor {
+    display: flex;
+    min-height: 90vh;        /* Altura mínima de 90% del viewport */
+  }
+  
+  /* === PANEL IZQUIERDO === */
   .panel-izquierdo {
     flex: 1;
     padding: 2rem;
@@ -33,67 +37,12 @@
   
   .avatar {
     width: 100px;
-    border-radius: 50%;
+    border-radius: 50%;       /* Imagen redonda */
     margin-bottom: 1rem;
   }
   
-  .panel-izquierdo form label,
-  .panel-izquierdo form input {
-    display: block;
-    margin-bottom: 0.5rem;
-  }
-  
-  .panel-izquierdo input {
-    width: 100%;
-    padding: 0.4rem;
-    margin-bottom: 1rem;
-  }
-  
-  .panel-izquierdo button {
-    background-color: var(--gris-oscuro);
-    color: var(--blanco);
-    border: none;
-    padding: 0.6rem;
-    cursor: pointer;
-  }
-  
-  .opciones h3 {
-    margin-top: 1.5rem;
-  }
-  
-  .panel-derecho {
-    flex: 2;
-    padding: 2rem;
-    background-color: var(--blanco);
-  }
-  
-  .filtros label,
-  .filtros select {
-    display: block;
-    margin-bottom: 0.5rem;
-  }
-  
-  .productos {
-    list-style: none;
-    padding: 0;
-    margin-top: 1rem;
-  }
-  
-  .productos li {
-    padding: 0.5rem;
-    border-bottom: 1px solid #ccc;
-  }
-  
-  footer {
-    background-color: var(--gris-oscuro);
-    color: var(--blanco);
-    text-align: center;
-    padding: 1rem;
-  }
-  
-
-  /* FORMULARIO EN PANEL IZQUIERDO */
-.panel-izquierdo form {
+  /* === FORMULARIO === */
+  .panel-izquierdo form {
     display: flex;
     flex-direction: column;
   }
@@ -110,6 +59,7 @@
     border: 1px solid #ccc;
     font-size: 1rem;
     transition: all 0.3s ease;
+    margin-bottom: 1rem;
   }
   
   .panel-izquierdo form input:focus {
@@ -119,7 +69,6 @@
     background-color: #f9f9f9;
   }
   
-  /* BOTÓN ACTUALIZAR PERFIL */
   .panel-izquierdo button {
     background-color: var(--gris-oscuro);
     color: var(--blanco);
@@ -136,30 +85,94 @@
     background-color: #333;
   }
   
+  /* === SECCIÓN OPCIONES === */
+  .opciones {
+    margin-top: 2rem;
+    background-color: #ffffff;
+    padding: 1.5rem;
+    border-radius: 15px;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+  }
+  
+  .opciones h3 {
+    font-size: 1.1rem;
+    margin-bottom: 0.5rem;
+    color: #2a9d8f;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 0.3rem;
+  }
+  
+  .opciones label {
+    display: flex;
+    align-items: center;
+    margin: 0.5rem 0;
+    font-size: 0.95rem;
+    gap: 0.5rem;
+    color: #333;
+  }
+  
+  .opciones input[type="checkbox"] {
+    accent-color: #2a9d8f;
+    width: 18px;
+    height: 18px;
+  }
+  
+  /* === PANEL DERECHO === */
+  .panel-derecho {
+    flex: 2;
+    padding: 2rem;
+    background-color: var(--blanco);
+  }
+  
+  /* === FILTROS === */
   .filtros {
-    background-color: #f4f4f4;
-    padding: 1rem;
-    border-radius: 10px;
-    box-shadow: 0 0 8px rgba(0,0,0,0.1);
+    background-color: #ffffff;
+    padding: 1.5rem;
+    border-radius: 15px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
     margin-bottom: 2rem;
   }
   
   .filtros h4 {
     margin-top: 1rem;
-    color: var(--azul-principal);
+    color: #2a9d8f;
+    font-size: 1.1rem;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 0.3rem;
   }
   
-  .filtros label,
-  .filtros select {
+  .filtros label {
+    display: flex;
+    align-items: center;
+    margin: 0.3rem 0;
+    gap: 0.5rem;
     font-size: 0.95rem;
-    margin-bottom: 0.5rem;
+    color: #333;
   }
-
   
+  .filtros input[type="checkbox"] {
+    accent-color: #2a9d8f;
+    width: 18px;
+    height: 18px;
+  }
+  
+  .filtros select {
+    width: 100%;
+    padding: 0.4rem;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    margin-top: 0.5rem;
+    font-size: 0.95rem;
+  }
+  
+  /* === PRODUCTOS === */
   .productos {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
     gap: 1rem;
+    list-style: none;
+    padding: 0;
+    margin-top: 1rem;
   }
   
   .productos li {
@@ -176,6 +189,7 @@
   .productos li:hover {
     transform: scale(1.05);
   }
+  
   .productos li img {
     width: 100%;
     max-height: 120px;
@@ -183,4 +197,12 @@
     border-radius: 8px;
     margin-bottom: 0.5rem;
   }
-    
+  
+  /* === FOOTER === */
+  footer {
+    background-color: var(--gris-oscuro);
+    color: var(--blanco);
+    text-align: center;
+    padding: 1rem;
+  }
+  
