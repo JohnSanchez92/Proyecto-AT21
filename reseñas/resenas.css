@@ -1,0 +1,102 @@
+body {
+  font-family: 'Inknut Antiqua', serif;
+  margin: 0;
+  padding: 0;
+  background-color: #F0F0F0;
+}
+
+header {
+  padding: 0;
+  margin: 0;
+}
+
+header img {
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+  display: block;
+}
+
+.reseñas {
+  padding: 30px;
+  text-align: center;
+}
+
+h2 {
+  color: #000;
+  font-size: 1.8rem;
+  font-weight: bold;
+}
+
+.container {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 30px;
+}
+
+.comentarios {
+  background-color: #A9CDFF;
+  padding: 20px;
+  border-radius: 10px;
+  width: 40%;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.comentarios h3 {
+  margin-bottom: 10px;
+}
+
+.comentarios textarea {
+  width: 100%;
+  height: 150px;
+  padding: 10px;
+  border-radius: 10px;
+  border: 1px solid #888;
+  resize: none;
+  background: transparent;
+  margin: -10px;
+  padding: auto;
+}
+
+.calificacion {
+  background-color: #E0E0E0;
+  padding: 20px;
+  border-radius: 10px;
+  width: 40%;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.calificacion h3 {
+  margin-bottom: 20px;
+}
+
+.calificacion button {
+  margin: 10px;
+  padding: 10px 20px;
+  background-color: #888;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.calificacion button:hover {
+  background-color: #666;
+}
+
+footer {
+  background-color: white;
+  text-align: center;
+  padding: 10px;
+  margin-top: 30px;
+  border-top: 3px solid #2D74DA;
+}
+
+.rectangulo-footer {
+  padding: 10px;
+}
+
+.button-text-color {
+  color: #000 !important;
+  
+}
