@@ -12,27 +12,32 @@
 
   <div class="contenedor-principal">
 
-    <!-- SIDEBAR / PANEL IZQUIERDO -->
+    <!-- Parte del administrador Nombre, Rol, lado izquierdo -->
     <aside class="sidebar">
-      <div class="logo-container">
-        <img src="../detallePerfil/img/a.png" alt="Logo">
-
-        <h1>Usuarios registrados</h1>
-
+      <div class="tarjeta-usuario">
+        <img src="../../public/img/a.png" alt="Avatar del usuario" class="avatar-usuario">
+        <div class="info-usuario">
+          <h3>Juan Perez</h3>
+          <p>Rol: Administrador</p>
+          <p>Email: usuario@tecart.com</p>
+          <button class="btn-ver-perfil">Ver perfil</button>
+        </div>
       </div>
-      <nav class="menu">
-        <ul>
-          <li><a href="#">Ver activos</a></li>
-          <li><a href="#">Ventas</a></li>
-          <li><a href="#">Ver usuarios</a></li>
-          <li><a href="#">Inventarios</a></li>
-        </ul>
+      <nav class="navegacion">
+        <button>Ver activos</button>
+        <button>Ventas</button>
+        <button>Inventarios</button>
+        <button class="activo">Ver usuarios</button>
       </nav>
     </aside>
 
     <!-- CONTENIDO PRINCIPAL -->
     <main class="contenido">
       <h1>Gestión de Usuarios</h1>
+      <div class="buscador-usuarios">
+        <input type="text" placeholder="Buscar usuario..." />
+        <button type="button">Buscar</button>
+      </div>
 
       <table class="tabla-usuarios">
         <thead>
@@ -50,7 +55,7 @@
             <td>001</td>
             <td>Juan Pérez</td>
             <td>Administrador</td>
-            <td>juan@example.com</td>
+            <td>juan@tecart.com</td>
             <td>
               <button class="editar">Editar</button>
               <button class="eliminar">Eliminar</button>
@@ -60,11 +65,21 @@
             <td>002</td>
             <td>María Gómez</td>
             <td>Vendedor</td>
-            <td>maria@example.com</td>
+            <td>maria@tecart.com</td>
             <td>
               <button class="editar">Editar</button>
               <button class="eliminar">Eliminar</button>
             </td>
+          </tr>
+          <tr>
+            <td>003</td>
+            <td>Raquel mora</td>
+            <td>Proveedor</td>
+            <td>Rmora@hotmail.com</td>
+            <td>
+              <button class="editar">Editar</button>
+              <button class="eliminar">Eliminar</button>
+            </td> 
           </tr>
         </tbody>
       </table>
