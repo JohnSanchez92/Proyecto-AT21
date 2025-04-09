@@ -1,126 +1,138 @@
+/* Estilo para la imagen del encabezado */
 header img {
-    width: 100%;   /* Mantiene el ancho al 100% de la pantalla */
-    height: 400px; /* Fija la altura en 326px */
-    object-fit: cover; /* Evita la distorsión de la imagen */
+    width: 100%;   /* La imagen ocupa el ancho completo del contenedor */
+    height: 400px; /* Altura fija de la imagen */
+    object-fit: cover; /* Ajusta la imagen para que no se distorsione */
     display: block;  /* Elimina espacios extra debajo de la imagen */
 }
 
+/* Estilo general del cuerpo */
 body {
-    font-family: 'Inknut Antiqua', serif;
-    color: #002355;
+    font-family: 'Inknut Antiqua', serif; /* Fuente personalizada */
+    color: #002355; /* Color principal del texto */
 }
 
+/* Estilo para el título principal */
 h1 {
-    font-weight: bold; /* Aplica negrita al h1 */
-    color: #002355;
+    font-weight: bold; /* Negrita para el título */
+    color: #002355; /* Color del texto */
 }
 
+/* Estilo para las listas */
 ul {
-    list-style-type: none; /* Elimina los puntos por defecto */
-    padding-left: 0; /* Elimina el margen izquierdo por defecto */
+    list-style-type: none; /* Elimina los puntos por defecto de la lista */
+    padding-left: 0; /* Elimina el margen izquierdo */
 }
 
+/* Estilo para los elementos de la lista */
 ul li {
-    position: relative;
+    position: relative; /* Posiciona el ícono relativo al texto */
     padding-left: 20px; /* Espacio para el ícono */
 }
 
+/* Estilo para el ícono antes de cada elemento de la lista */
 ul li::before {
-    content: '♦'; /* Carácter de rombo */
-    position: absolute;
-    left: 0;
-    top: 0;
-    font-size: 20px; /* Tamaño del rombo */
-    color: #559BFE; /* Color del rombo */
+    content: '♦'; /* Carácter de rombo como ícono */
+    position: absolute; /* Posiciona el ícono de forma absoluta */
+    left: 0; /* Alinea el ícono a la izquierda */
+    top: 0; /* Alinea el ícono en la parte superior */
+    font-size: 20px; /* Tamaño del ícono */
+    color: #559BFE; /* Color del ícono */
 }
 
+/* Estilo para el rectángulo del menú de navegación */
 .rectangulo {
-    width: 1215px;
-    height: 148px;
-    background-color: #559BFE; /* Azul */
-    margin: 20px auto; /* Centrado horizontal */
-    border-radius: 20px; /* Bordes curvos */
+    width: 1215px; /* Ancho del rectángulo */
+    height: 148px; /* Altura del rectángulo */
+    background-color: #559BFE; /* Color de fondo azul */
+    margin: 20px auto; /* Centrado horizontal con margen superior/inferior */
+    border-radius: 20px; /* Bordes redondeados */
 }
 
+/* Estilo para el contenedor de los botones del menú */
 .menu-botones {
-    display: flex;
+    display: flex; /* Usa flexbox para organizar los botones */
     justify-content: space-around; /* Distribuye los botones equitativamente */
-    align-items: center;
-    height: 100%;
+    align-items: center; /* Centra los botones verticalmente */
+    height: 100%; /* Ocupa toda la altura del contenedor */
 }
 
+/* Estilo para los enlaces del menú */
 .menu-botones a {
-    text-decoration: none;
-    color: #002355;
-    font-weight: bold;
-    text-align: center;
-    font-size: 14px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    text-decoration: none; /* Elimina el subrayado de los enlaces */
+    color: #002355; /* Color del texto */
+    font-weight: bold; /* Negrita para el texto */
+    text-align: center; /* Centra el texto */
+    font-size: 14px; /* Tamaño del texto */
+    display: flex; /* Usa flexbox para organizar el contenido */
+    flex-direction: column; /* Coloca el ícono encima del texto */
+    align-items: center; /* Centra el contenido horizontalmente */
 }
 
+/* Estilo para las imágenes de los botones del menú */
 .menu-botones img {
-    width: 50px; /* Ajusta el tamaño de los íconos */
-    height: 50px;
-    margin-bottom: 5px;
+    width: 50px; /* Ancho de los íconos */
+    height: 50px; /* Altura de los íconos */
+    margin-bottom: 5px; /* Espacio entre el ícono y el texto */
 }
 
-/* Efecto hover */
+/* Efecto hover para los íconos del menú */
 .menu-botones a:hover img {
-    transform: scale(1.1); /* Hace el ícono más grande al pasar el mouse */
+    transform: scale(1.1); /* Aumenta el tamaño del ícono al pasar el mouse */
 }
 
+/* Estilo para el contenido principal */
 main {
     text-align: center; /* Centra todo el texto dentro del main */
 }
 
+/* Estilo para centrar la lista dentro del main */
 ul {
-    display: inline-block; /* Permite que la lista se centre dentro del main */
-    text-align: left; /* Mantiene la alineación del texto dentro de la lista */
+    display: inline-block; /* Permite centrar la lista */
+    text-align: left; /* Alinea el texto de la lista a la izquierda */
 }
 
-/* Rectángulo del footer */
+/* Estilo para el rectángulo del pie de página */
 .rectangulo-footer {
-    width: 1215px;
-    height: 148px;
-    background-color: #559BFE; /* Azul */
-    margin: 20px auto; /* Centrado horizontal */
-    border-radius: 20px; /* Bordes curvos */
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    width: 1215px; /* Ancho del rectángulo */
+    height: 148px; /* Altura del rectángulo */
+    background-color: #559BFE; /* Color de fondo azul */
+    margin: 20px auto; /* Centrado horizontal con margen superior/inferior */
+    border-radius: 20px; /* Bordes redondeados */
+    display: flex; /* Usa flexbox para organizar el contenido */
+    justify-content: center; /* Centra el contenido horizontalmente */
+    align-items: center; /* Centra el contenido verticalmente */
 }
 
-/* Contenedor de redes sociales */
+/* Estilo para el contenedor de redes sociales */
 .redes-sociales {
-    display: flex;
-    justify-content: space-around; /* Distribuye los botones */
-    align-items: center;
-    width: 80%;
+    display: flex; /* Usa flexbox para organizar los enlaces */
+    justify-content: space-around; /* Distribuye los enlaces equitativamente */
+    align-items: center; /* Centra los enlaces verticalmente */
+    width: 80%; /* Ancho del contenedor */
 }
 
-/* Estilos de los enlaces */
+/* Estilo para los enlaces de redes sociales */
 .redes-sociales a {
-    text-decoration: none;
-    color: #002355;
-    font-weight: bold;
-    text-align: center;
-    font-size: 14px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    text-decoration: none; /* Elimina el subrayado de los enlaces */
+    color: #002355; /* Color del texto */
+    font-weight: bold; /* Negrita para el texto */
+    text-align: center; /* Centra el texto */
+    font-size: 14px; /* Tamaño del texto */
+    display: flex; /* Usa flexbox para organizar el contenido */
+    flex-direction: column; /* Coloca el ícono encima del texto */
+    align-items: center; /* Centra el contenido horizontalmente */
 }
 
-/* Estilos de las imágenes */
+/* Estilo para las imágenes de redes sociales */
 .redes-sociales img {
     width: 50px; /* Tamaño de los íconos */
-    height: 50px;
-    margin-bottom: 5px;
-    transition: transform 0.3s ease-in-out;
+    height: 50px; /* Tamaño de los íconos */
+    margin-bottom: 5px; /* Espacio entre el ícono y el texto */
+    transition: transform 0.3s ease-in-out; /* Transición suave para el efecto hover */
 }
 
-/* Efecto hover */
+/* Efecto hover para los íconos de redes sociales */
 .redes-sociales a:hover img {
-    transform: scale(1.1); /* Hace el ícono más grande al pasar el mouse */
+    transform: scale(1.1); /* Aumenta el tamaño del ícono al pasar el mouse */
 }

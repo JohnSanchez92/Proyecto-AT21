@@ -1,76 +1,87 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <!-- Configuración básica del documento -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contactanos</title>
+    <!-- Enlace al archivo de estilos CSS -->
     <link rel="stylesheet" href="../contactanos/contactanosStyle.css">
+    <!-- Fuente personalizada desde Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Inknut+Antiqua:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
 
+    <!-- Encabezado del sitio -->
     <header>
+        <!-- Logo del sitio -->
         <img src="../public/logo/21.png" alt="Logo AT21">
     </header>
 
     <main>
+        <!-- Sección izquierda: Formulario de contacto -->
         <section class="left-side">
             <h2>Contactanos</h2>
-        <!-- Formulario de Contactanos -->
-        <form action="../homeAT21/home.html" method="GET"> <!-- method="GET" porque solo queremos redirigir sin procesar datos en el servidor -->
-            <div class="input-group">
-                <label for="nombres">Nombres:</label>
-                <input type="text" id="nombres" name="nombres" required>
-            </div>
+            <!-- Formulario de Contacto -->
+            <form action="../homeAT21/home.html" method="GET"> <!-- method="GET" porque solo queremos redirigir sin procesar datos en el servidor -->
+                <div class="input-group">
+                    <label for="nombres">Nombres:</label>
+                    <input type="text" id="nombres" name="nombres" required> <!-- Campo para ingresar los nombres -->
+                </div>
 
-            <div class="input-group">
-                <label for="celular">Celular:</label>
-                <input type="text" id="celular" name="celular" required>
-            </div>
+                <div class="input-group">
+                    <label for="celular">Celular:</label>
+                    <input type="text" id="celular" name="celular" required> <!-- Campo para ingresar el número de celular -->
+                </div>
 
-            <div class="input-group">
-                <label for="email">Correo Electrónico:</label>
-                <input type="email" id="email" name="email" required>
-            </div>
+                <div class="input-group">
+                    <label for="email">Correo Electrónico:</label>
+                    <input type="email" id="email" name="email" required> <!-- Campo para ingresar el correo electrónico -->
+                </div>
 
-            <div class="input-group">
-                <label for="mensaje">Mensaje:</label>
-                <textarea id="mensaje" name="mensaje" required></textarea> <!--  Cambiamos <input> por <textarea> para permitir múltiples líneas. -->
-            </div>
+                <div class="input-group">
+                    <label for="mensaje">Mensaje:</label>
+                    <textarea id="mensaje" name="mensaje" required></textarea> <!-- Campo para ingresar un mensaje (múltiples líneas) -->
+                </div>
 
-            <button type="submit">Enviar</button>
-        </form>
+                <button type="submit">Enviar</button> <!-- Botón para enviar el formulario -->
+            </form>
         </section>
 
+        <!-- Sección derecha: Redes sociales -->
         <section class="right-side">
             <h2>Síguenos en redes</h2>
             <div class="social-icons">
+                <!-- Ícono de Facebook -->
                 <div class="social-item">
                     <img src="../public/redes/bxl-facebook-circle.svg" alt="Facebook">
                     <span>Facebook</span>
                 </div>
 
+                <!-- Ícono de Instagram -->
                 <div class="social-item">
                     <img src="../public/redes/bxl-instagram-alt.svg" alt="Instagram">
                     <span>Instagram</span>
                 </div>
 
+                <!-- Ícono de WhatsApp -->
                 <div class="social-item">
                     <img src="../public/redes/bxl-whatsapp-square.svg" alt="WhatsApp">
                     <span>WhatsApp</span>
                 </div>
 
+                <!-- Ícono de LinkedIn -->
                 <div class="social-item">
                     <img src="../public/redes/bxl-linkedin-square.svg" alt="LinkedIn">
                     <span>LinkedIn</span>
                 </div>
             </div>
         </section>
-
     </main>
 
+    <!-- Pie de página -->
     <footer>
-        <p>&copy; 2025 Artículos Tecnológicos 21. Todos los derechos reservados.</p>
+        <p>&copy; 2025 Artículos Tecnológicos 21. Todos los derechos reservados.</p> <!-- Derechos reservados -->
     </footer>
     
 </body>
