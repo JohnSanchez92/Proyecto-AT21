@@ -20,7 +20,7 @@ document.addEventListener("DOMContentLoaded", function () {
         cerrarSesion.addEventListener("click", function (e) {
             e.preventDefault();
             localStorage.removeItem("nombreUsuario");
-            location.reload(); // También puedes usar window.location.href = 'loginRegistro.html'
+            location.reload(); // si quiero permanecer en mi vista actual puedo usar window.location.href = 'loginRegistro.html'
         });
     }
 });
