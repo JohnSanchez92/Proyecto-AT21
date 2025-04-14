@@ -3,7 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <title>Gracias por tu mensaje</title>
-    <meta http-equiv="refresh" content="5; url=../homeAT21/home.html"> <!-- Redirige a la página principal después de 5 segundos -->
+    <!-- Icono de la pestaña del navegador -->
+    <link rel="icon" href="../public/iconos/21.ico" type="image/x-icon">
+    <meta http-equiv="refresh" content="5; url=../homeAT21/home.html">  <!--Redirige a la página principal después de 5 segundos -->
 
     <!-- Encabezado del sitio -->
     <header>
@@ -41,11 +43,34 @@ p {
     font-size: 1.5em;
     margin: 10px 20px;
 }
+
+footer p {
+    font-size: 12px;
+    text-align: center;
+    padding: 10px;
+}
+
+/* Media query para pantallas pequeñas */
+@media (max-width: 768px) {
+    /* Ajustar la imagen del encabezado */
+    header img {
+        height: 200px; /* Reducimos la altura para pantallas pequeñas */
+    }
+
+    /* Cambiar el layout del main a vertical */
+    main {
+        flex-direction: column; /* De columnas a filas (stacked) */
+        height: auto; /* Altura automática para que se adapte al contenido */
+    }
+}
     </style>
 </head>
 <body>
     <h1>¡Gracias por contactarnos!</h1>
     <p>Tu mensaje ha sido enviado exitosamente.</p>
     <p>Serás redirigido a la página principal en unos segundos...</p>
+    <footer>
+        <p>&copy; 2025 Artículos Tecnológicos 21. Todos los derechos reservados.</p>
+    </footer>
 </body>
 </html>
