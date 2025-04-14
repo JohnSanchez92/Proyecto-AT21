@@ -136,3 +136,68 @@ ul {
 .redes-sociales a:hover img {
     transform: scale(1.1); /* Aumenta el tamaño del ícono al pasar el mouse */
 }
+
+/* Media query para pantallas pequeñas */
+@media (max-width: 768px) {
+    /* Estilos para pantallas pequeñas (móviles) */
+    header img {
+        height: 200px; /* Reduce la altura de la imagen del encabezado */
+    }
+    body {
+        font-size: 14px; /* Reduce el tamaño de la fuente */
+    }
+
+    .rectangulo {
+        width: 100%; /* El rectángulo ocupa todo el ancho */
+        height: auto; /* Ajusta la altura automáticamente */
+        border-radius: 10px; /* Reduce el redondeo */
+    }
+
+    .menu-botones {
+        flex-direction: column; /* Cambia los botones a una columna */
+        gap: 10px; /* Espacio entre los botones */
+    }
+
+    .menu-botones a {
+        font-size: 12px; /* Reduce el tamaño del texto */
+    }
+
+    img {
+        width: 80%; /* Ajusta el tamaño de las imágenes */
+        height: auto; /* Mantiene la proporción */
+    }
+}
+
+ /* Ajustes para el rectángulo del pie de página */
+ .rectangulo-footer {
+    width: 100%; /* El ancho ocupa toda la pantalla */
+    height: auto; /* Ajusta la altura automáticamente */
+    padding: 20px; /* Añade un poco de espacio interno */
+    border-radius: 10px; /* Reduce el redondeo de los bordes */
+    flex-direction: column; /* Cambia la disposición a columna */
+}
+
+/* Ajustes para la navegación de redes sociales */
+.redes-sociales {
+    flex-direction: column; /* Coloca los enlaces en una columna */
+    gap: 15px; /* Espacio entre los enlaces */
+    width: 100%; /* Ocupa todo el ancho disponible */
+}
+
+/* Ajustes para los enlaces de redes sociales */
+.redes-sociales a {
+    font-size: 12px; /* Reduce el tamaño del texto */
+}
+
+/* Ajustes para las imágenes de redes sociales */
+.redes-sociales img {
+    width: 40px; /* Reduce el tamaño de los íconos */
+    height: 40px;
+}
+
+/* Ajustes para el texto de derechos reservados */
+footer p {
+    font-size: 12px; /* Reduce el tamaño del texto */
+    text-align: center; /* Centra el texto */
+    margin-top: 10px; /* Añade un poco de espacio superior */
+}

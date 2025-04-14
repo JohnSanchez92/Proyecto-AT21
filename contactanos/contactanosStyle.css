@@ -159,3 +159,58 @@ button:hover {
 .social-item img:hover {
     transform: scale(1.2); /* Aumenta el tamaño del ícono al pasar el mouse */
 }
+
+/* Media query para pantallas pequeñas */
+@media (max-width: 768px) {
+    /* Ajustar la imagen del encabezado */
+    header img {
+        height: 200px; /* Reducimos la altura para pantallas pequeñas */
+    }
+
+    /* Cambiar el layout del main a vertical */
+    main {
+        flex-direction: column; /* De columnas a filas (stacked) */
+        height: auto; /* Altura automática para que se adapte al contenido */
+    }
+
+    /* Ajustar secciones */
+    .left-side,
+    .right-side {
+        min-height: auto; /* Quitar altura fija */
+        padding: 20px 10px; /* Agregar algo de padding */
+    }
+
+    /* Ajustar formularios */
+    form {
+        width: 90%; /* Formularios más anchos en móviles */
+        max-width: 100%; /* Elimina el límite máximo de 300px */
+    }
+
+    /* Ajustar el footer */
+    .rectangulo-footer {
+        flex-direction: column; /* Apila los elementos en lugar de distribuirlos horizontalmente */
+        width: 90%; /* Menor ancho */
+        height: auto; /* Altura automática */
+        padding: 20px 10px; /* Espaciado interno */
+    }
+
+    .redes-sociales {
+        flex-direction: column; /* Apilar los enlaces */
+        gap: 10px; /* Espacio entre ellos */
+    }
+
+    .redes-sociales a {
+        font-size: 12px; /* Texto un poco más pequeño */
+    }
+
+    .redes-sociales img {
+        width: 40px;
+        height: 40px;
+    }
+
+    footer p {
+        font-size: 12px;
+        text-align: center;
+        padding: 10px;
+    }
+}
