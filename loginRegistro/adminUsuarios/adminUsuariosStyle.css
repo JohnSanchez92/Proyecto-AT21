@@ -13,7 +13,7 @@
 }
 
 body {
-  font-family: 'Segoe UI', sans-serif;
+  font-family: 'Inknut Antiqua', serif; /* Fuente personalizada */
   background-color: var(--gris-claro);
   color: var(--gris-oscuro);
 }

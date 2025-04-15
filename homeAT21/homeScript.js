@@ -1,7 +1,7 @@
 document.addEventListener("DOMContentLoaded", function () {
     const nombreUsuario = localStorage.getItem("nombreUsuario");
 
-    // Cambiar solo el texto del span si hay un usuario logueado
+    // Cambiar el texto del span si hay un usuario logueado
     if (nombreUsuario) {
         const nav = document.querySelector(".menu-botones");
         const loginLink = nav.querySelector("a[href*='loginRegistro.html']");
@@ -11,6 +11,7 @@ document.addEventListener("DOMContentLoaded", function () {
             if (span) {
                 span.textContent = nombreUsuario;
             }
+            loginLink.href = "../loginRegistro/adminUsuarios/adminUsuarios.html"; // ya no es loginRegistro.html, ahora es adminUsuarios.html
         }
     }
 
