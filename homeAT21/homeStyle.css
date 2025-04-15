@@ -10,6 +10,10 @@ header img {
 body {
     font-family: 'Inknut Antiqua', serif; /* Fuente personalizada */
     color: #002355; /* Color principal del texto */
+    height: 100%; /* Altura completa de la ventana */
+    margin: 0; /* Elimina el margen por defecto */
+    padding: 0; /* Elimina el padding por defecto */
+    border: 0; /* Elimina el borde por defecto */
 }
 
 /* Estilo para el título principal */
@@ -137,6 +141,19 @@ ul {
     transform: scale(1.1); /* Aumenta el tamaño del ícono al pasar el mouse */
 }
 
+/* Estilo para el pie de página */
+.pie-footer {
+    background-color: #559BFE;
+    color: #002355; /* Color del texto */
+    font-weight: bold; /* Negrita para el texto */
+    text-decoration: underline; /* Subraya el texto */
+    padding: 20px 10px; /* Espacio interno del pie de página */
+    text-align: center; /* Centra el texto */
+    font-size: 14px; /* Tamaño del texto */
+    margin: 5px 0; /* Espacio entre el pie de página y otros elementos */
+    border-radius: 10px; /* Bordes redondeados */   
+}
+
 /* Media query para pantallas pequeñas */
 @media (max-width: 768px) {
     /* Estilos para pantallas pequeñas (móviles) */
@@ -166,38 +183,13 @@ ul {
         width: 80%; /* Ajusta el tamaño de las imágenes */
         height: auto; /* Mantiene la proporción */
     }
-}
-
- /* Ajustes para el rectángulo del pie de página */
- .rectangulo-footer {
-    width: 100%; /* El ancho ocupa toda la pantalla */
-    height: auto; /* Ajusta la altura automáticamente */
-    padding: 20px; /* Añade un poco de espacio interno */
-    border-radius: 10px; /* Reduce el redondeo de los bordes */
-    flex-direction: column; /* Cambia la disposición a columna */
-}
-
-/* Ajustes para la navegación de redes sociales */
-.redes-sociales {
-    flex-direction: column; /* Coloca los enlaces en una columna */
-    gap: 15px; /* Espacio entre los enlaces */
-    width: 100%; /* Ocupa todo el ancho disponible */
-}
-
-/* Ajustes para los enlaces de redes sociales */
-.redes-sociales a {
-    font-size: 12px; /* Reduce el tamaño del texto */
-}
-
-/* Ajustes para las imágenes de redes sociales */
-.redes-sociales img {
-    width: 40px; /* Reduce el tamaño de los íconos */
-    height: 40px;
-}
-
-/* Ajustes para el texto de derechos reservados */
-footer p {
-    font-size: 12px; /* Reduce el tamaño del texto */
-    text-align: center; /* Centra el texto */
-    margin-top: 10px; /* Añade un poco de espacio superior */
+    .rectangulo-footer {
+        width: 100%; /* El rectángulo ocupa todo el ancho */
+        height: auto; /* Ajusta la altura automáticamente */
+        border-radius: 10px; /* Reduce el redondeo */
+    }
+    .redes-sociales {
+        flex-direction: column; /* Cambia los enlaces a una columna */
+        gap: 10px; /* Espacio entre los enlaces */
+    }
 }

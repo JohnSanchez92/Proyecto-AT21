@@ -44,10 +44,17 @@ p {
     margin: 10px 20px;
 }
 
-footer p {
-    font-size: 12px;
-    text-align: center;
-    padding: 10px;
+/* Estilo para el pie de página */
+.pie-footer {
+    background-color: #559BFE;
+    color: #002355; /* Color del texto */
+    font-weight: bold; /* Negrita para el texto */
+    text-decoration: underline; /* Subraya el texto */
+    padding: 20px 10px; /* Espacio interno del pie de página */
+    text-align: center; /* Centra el texto */
+    font-size: 14px; /* Tamaño del texto */
+    margin: 5px 0; /* Espacio entre el pie de página y otros elementos */
+    border-radius: 10px; /* Bordes redondeados */   
 }
 
 /* Media query para pantallas pequeñas */
@@ -70,7 +77,9 @@ footer p {
     <p>Tu mensaje ha sido enviado exitosamente.</p>
     <p>Serás redirigido a la página principal en unos segundos...</p>
     <footer>
-        <p>&copy; 2025 Artículos Tecnológicos 21. Todos los derechos reservados.</p>
+        <div class="pie-footer">
+            <p>2025 Artículos Tecnológicos 21.</p>
+            </div>
     </footer>
 </body>
 </html>

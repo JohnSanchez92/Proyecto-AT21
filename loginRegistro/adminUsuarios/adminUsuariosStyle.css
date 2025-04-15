@@ -218,3 +218,16 @@ header img {
 .eliminar:hover {
   background-color: #c0392b;
 }
+
+/* Estilo para el pie de página */
+.pie-footer {
+  background-color: #559BFE;
+  color: #002355; /* Color del texto */
+  font-weight: bold; /* Negrita para el texto */
+  text-decoration: underline; /* Subraya el texto */
+  padding: 20px 10px; /* Espacio interno del pie de página */
+  text-align: center; /* Centra el texto */
+  font-size: 14px; /* Tamaño del texto */
+  margin: 5px 0; /* Espacio entre el pie de página y otros elementos */
+  border-radius: 10px; /* Bordes redondeados */   
+}
