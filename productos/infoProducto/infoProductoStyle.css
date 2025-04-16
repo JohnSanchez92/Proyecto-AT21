@@ -203,3 +203,94 @@ body {
     margin: 5px 0; /* Espacio entre el pie de página y otros elementos */
     border-radius: 10px; /* Bordes redondeados */   
 }
+
+/* Media query para pantallas pequeñas */
+@media (max-width: 768px) {
+    body {
+        font-size: 12px;
+    }
+
+    header img {
+        height: 200px; /* Reduce la altura de la imagen del encabezado */  
+    }
+
+    .contenedor {
+        display: flex;
+        flex-direction: column;
+        width: 90%;
+        margin: 20px auto;
+    }
+
+    .imagen-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .imagen {
+        width: 100%;
+        height: auto;
+        margin: 20px 0;
+        border: 1px solid #333;
+    }
+
+    .texto-arriba-derecha,
+    .texto-abajo-izquierda {
+        padding: 10px;
+    }
+
+    .texto-arriba-derecha h1,
+    .texto-arriba-derecha h2,
+    .texto-arriba-derecha h3,
+    .texto-abajo-izquierda h1,
+    .texto-abajo-izquierda p {
+        margin: 10px 0;
+        font-size: 14px;
+    }
+
+    .texto-arriba-derecha ul {
+        margin-left: 20px;
+    }
+
+    .botones {
+        width: 100%;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .boton,
+    .boton2 {
+        width: 100%;
+        font-size: 14px;
+        padding: 10px;
+    }
+
+    .rectangulo-footer {
+        width: 100%;
+        height: auto;
+        border-radius: 10px;
+        padding: 10px;
+        flex-direction: column;
+    }
+
+    .redes-sociales {
+        flex-direction: column;
+        gap: 10px;
+        width: 100%;
+    }
+
+    .pie-footer {
+        font-size: 12px;
+        padding: 15px;
+        margin: 10px 0;
+    }
+
+    .redes-sociales a {
+        font-size: 12px;
+    }
+
+    .redes-sociales img {
+        width: 40px;
+        height: 40px;
+    }
+}

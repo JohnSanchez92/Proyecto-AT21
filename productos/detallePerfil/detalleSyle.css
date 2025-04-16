@@ -256,4 +256,21 @@
   margin: 5px 0; /* Espacio entre el pie de página y otros elementos */
   border-radius: 10px; /* Bordes redondeados */   
 }
+
+/* Media query para pantallas pequeñas */
+@media (max-width: 768px) {
+  /* Estilos para pantallas pequeñas (móviles) */
+  header img {
+    height: 200px; /* Reduce la altura de la imagen del encabezado */
+}
+  .rectangulo-footer {
+    width: 100%; /* El rectángulo ocupa todo el ancho */
+    height: auto; /* Ajusta la altura automáticamente */
+    border-radius: 10px; /* Reduce el redondeo */
+}
+.redes-sociales {
+    flex-direction: column; /* Cambia los enlaces a una columna */
+    gap: 10px; /* Espacio entre los enlaces */
+}
+}
   
