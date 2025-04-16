@@ -33,5 +33,23 @@ document.addEventListener("DOMContentLoaded", () => {
     const precio = document.querySelector(".texto-arriba-derecha h3");
     if (precio) precio.textContent = `Precio: ${data.precio}`;
   });
-  console.log("Datos cargados:", data);
-    // Obtener el botón de "Agregar al carrito"
+
+  // Eventos de los botones
+  const btnComprar = document.getElementById("botonComprar");
+  const btnAgregar = document.getElementById("botonAgregarCarrito");
+
+  const redirigirACompra = () => {
+    window.location.href = "../compra/compra.html";
+  };
+
+  if (btnComprar) {
+    btnComprar.addEventListener("click", () => {
+      redirigirACompra();
+    });
+  }
+
+  if (btnAgregar) {
+    btnAgregar.addEventListener("click", () => {
+      alert("Producto agregado al carrito");
+    });
+  }
