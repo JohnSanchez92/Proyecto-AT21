@@ -31,6 +31,9 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
+  box-sizing: border-box; /* Asegura que el padding no afecte el ancho total */
+  overflow: auto; /* Permite el desplazamiento si el contenido es demasiado grande */
+  position: sticky; /* Mantiene la barra lateral fija al hacer scroll */
 }
 
 .logo-container img {
