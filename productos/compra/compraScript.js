@@ -1,7 +1,7 @@
 // Simulación de datos: reemplaza por localStorage o datos reales
 const usuario = {
-  nombre: "Juan Pérez",
-  correo: "juan.perez@email.com",
+  nombre: "Jhon Sanchez",
+  correo: "john.sanchez@at21.com",
   celular: "3001234567"
 };
 

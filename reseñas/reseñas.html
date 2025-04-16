@@ -17,23 +17,32 @@
     </header>
 
     <main>
-        <section class="reseñas">
-            <h2>Reseñas</h2>
-            <div class="container">
-                <!-- Comentarios -->
-                <div class="comentarios">
-                    <h3>Comentarios de tu compra</h3>
-                    <textarea placeholder=""></textarea>
-                </div>
-                <!-- Calificación -->
-                <div class="calificacion">
-                    <h3>Califica tu compra</h3>
-                    <button class="button-text-color">Conforme</button>
-                    <button class="button-text-color">Inconforme</button>
-                </div>
+        <section class="left-side">
+          <h2>Déjanos tu reseña</h2>
+          <form id="formResena">
+            <div class="input-group">
+              <label for="comentario">Comentario:</label>
+              <textarea id="comentario" rows="5" placeholder="Escribe tu experiencia aquí..." required></textarea>
             </div>
+              <div class="input-group">
+                <label>Calificación:</label>
+                <div class="rating-buttons">
+                  <button type="button" class="button-text-color calificacion-btn" id="btnConforme" onclick="setCalificacion('Conforme')">Conforme</button>
+                  <button type="button" class="button-text-color calificacion-btn" id="btnInconforme" onclick="setCalificacion('Inconforme')">Inconforme</button>
+                </div>
+              </div>
+            </div>
+            <button type="submit">Enviar Reseña</button>
+          </form>
         </section>
-    </main>
+      
+        <section class="right-side">
+          <h2>Reseñas de otros usuarios</h2>
+          <div id="listaResenas">
+            <!-- Aquí se insertarán dinámicamente los comentarios -->
+          </div>
+        </section>
+      </main>
 
     <footer>
         <div class="rectangulo-footer">
@@ -60,5 +69,6 @@
             <p>2025 Artículos Tecnológicos 21.</p>
             </div>
     </footer>
+    <script src="../reseñas/reseñasScript.js"></script>
 </body>
 </html>
