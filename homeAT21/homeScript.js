@@ -11,7 +11,7 @@ document.addEventListener("DOMContentLoaded", function () {
             if (span) {
                 span.textContent = nombreUsuario;
             }
-            loginLink.href = "../loginRegistro/adminUsuarios/adminUsuarios.html"; // ya no es loginRegistro.html, ahora es adminUsuarios.html
+            loginLink.href = "/loginRegistro/adminUsuarios/adminUsuarios.html"; // ya no es loginRegistro.html, ahora es adminUsuarios.html
         }
     }
 

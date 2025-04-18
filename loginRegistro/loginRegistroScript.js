@@ -17,7 +17,7 @@ formLogin.addEventListener("submit", function (e) {
   if (usuarioEncontrado) {
     alert(`¡Bienvenido, ${usuarioEncontrado.nombres}!`);
     localStorage.setItem("nombreUsuario", usuarioEncontrado.nombres); // Cambiar el texto del span en el home 
-    window.location.href = "../homeAT21/home.html"; // Redirección
+    window.location.href = "/homeAT21/home.html"; // Redirección
   } else {
     alert("Correo o contraseña incorrectos.");
   }
