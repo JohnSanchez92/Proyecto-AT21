@@ -6,24 +6,35 @@
   <title>Perfil de Usuario</title>
   <!-- Icono de la pestaña del navegador -->
   <link rel="icon" href="/public/iconos/21.ico" type="image/x-icon">
+  
+  <!-- Enlace al CSS principal -->
   <link rel="stylesheet" href="detalleSyle.css">
+
+  <!-- Fuente externa de Google Fonts -->
   <link href="https://fonts.googleapis.com/css2?family=Inknut+Antiqua&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header>
-        <img src="/public/img/21.png" alt="Logo AT21">
-    </header>
 
+  <!-- =================== Header con logo =================== -->
+  <header>
+    <img src="/public/img/21.png" alt="Logo AT21">
+  </header>
+
+  <!-- =================== Contenido principal =================== -->
   <main class="contenedor">
-    <!-- Panel Izquierdo -->
+    
+    <!-- ===== Panel izquierdo: Datos de usuario y opciones ===== -->
     <section class="panel-izquierdo">
+      <!-- Avatar de usuario -->
       <img src="/public/img/a.png" alt="Avatar del usuario" class="avatar">
+      
+      <!-- Formulario de actualización de perfil -->
       <form>
         <label for="nombre">Nombre:</label>
         <input type="text" id="nombre" name="nombre">
 
         <label for="celular">Celular:</label>
-        <input type="text" id="celular" name="celular">
+        <input type="tel" id="celular" name="celular" pattern="[0-9]{10}" maxlength="10" inputmode="numeric" required>
 
         <label for="correo">Correo:</label>
         <input type="email" id="correo" name="correo">
@@ -34,6 +45,7 @@
         <button type="submit">Actualizar Perfil</button>
       </form>
 
+      <!-- Opciones adicionales del perfil -->
       <div class="opciones">
         <h3>Mis compras</h3>
         <label><input type="checkbox"> Pedidos</label>
@@ -47,9 +59,14 @@
       </div>
     </section>
 
-    <!-- Panel Derecho -->
+    <!-- ===== Panel derecho: Filtros y productos ===== -->
     <section class="panel-derecho">
-      <h2>Filtros</h2>
+
+      <!-- Sección de filtros con imagen -->
+      <h2>Filtros
+        <img src="/public/iconos/Filtro.png" alt="Icono de filtro" class="icono-filtro">
+      </h2>
+
       <div class="filtros">
         <h4>Marca</h4>
         <label><input type="checkbox"> LG</label>
@@ -69,106 +86,75 @@
         </select>
       </div>
 
+      <!-- Sección de productos agregando la descripcion-->
       <h2>Productos</h2>
       <ul class="productos">
-        <li 
-          data-nombre="Board ASRock" 
-          data-img="/public/img/p1.png" 
-          data-precio="1449900" 
-          data-caracteristicas="Soporta Socket AMD AM4 Ryzen™ 3000 3000 G-Series 4000 G-Series 5000 y 5000 G-Series Desktop Processors,
-                    6 Phase Power Design,
-                    Soporta memoria DDR4 4733+ (OC),
-                    1 x PCIe 3.0 x16, 1 x PCIe 3.0 x1,
-                    Opciones de salida gráficos: D-Sub HDMI,
-                    Audio 7.1 canales HD (Códec de audio Realtek ALC887),
-                    4 x SATA3, 
-                    1 x Ultra M.2(Gen3x4 & SATA3),
-                    6 x USB 3.2 Gen1(4 x Rear, 2 x Front)<br>6 x USB 2.0(2 x Rear, 4 x Front) Realtek Gigabit LAN"
-          data-descripcion="Las placas base ASRock son fabricadas por la empresa tecnológica ASRock Inc. Con sede en Taiwán. ASRock ofrece una variedad de placas base para diferentes tipos de usuarios desde entusiastas hasta el público general. ">
+        <!-- Producto individual -->
+        <li data-nombre="Board ASRock" data-img="/public/img/p1.png" data-precio="1449900" data-caracteristicas="..." data-descripcion="...">
           <img src="/public/img/p1.png" alt="Producto1">
           BOARD ASROCK
         </li>
-      
-        <li 
-          data-nombre="Board ASUS" 
-          data-img="/public/img/p2.png" 
-          data-precio="1549900" 
-          data-caracteristicas="Compatible con AMD Ryzen™ y chipset B550."
-          data-descripcion="La placa base ASUS es conocida por su calidad y rendimiento. Ofrece una amplia gama de características que la hacen ideal para gamers y profesionales. Con soporte para overclocking y una excelente gestión térmica, esta placa es perfecta para construir un sistema potente." >
+
+        <li data-nombre="Board ASUS" data-img="/public/img/p2.png" data-precio="1549900" data-caracteristicas="..." data-descripcion="...">
           <img src="/public/img/p2.png" alt="Producto2">
           BOARD ASUS
         </li>
-      
-        <li 
-          data-nombre="DDR4 32G" 
-          data-img="/public/img/p3.png" 
-          data-precio="280000" 
-          data-caracteristicas="Memoria RAM DDR4 32GB 3200MHz."
-          data-descripcion="Es una opción sólida para quienes buscan un rendimiento mejorado en su PC. Con esta RAM puedes esperar una mayor velocidad y capacidad de respuesta lo que resulta útil tanto para el trabajo como para el entretenimiento. ">
+
+        <li data-nombre="DDR4 32G" data-img="/public/img/p3.png" data-precio="280000" data-caracteristicas="..." data-descripcion="...">
           <img src="/public/img/p3.png" alt="Producto3">
           DDR4 32G
         </li>
 
-        <li 
-          data-nombre="SSD 1TB" 
-          data-img="/public/img/p4.png" 
-          data-precio="180000" 
-          data-caracteristicas="Almacenamiento SSD de 1TB."
-          data-descripcion="El SSD de 1TB es una excelente opción para quienes buscan un almacenamiento rápido y confiable. Con su capacidad de 1TB puedes almacenar una gran cantidad de datos y disfrutar de tiempos de carga más rápidos en tus aplicaciones y juegos. ">
+        <li data-nombre="SSD 1TB" data-img="/public/img/p4.png" data-precio="180000" data-caracteristicas="..." data-descripcion="...">
           <img src="/public/img/p4.png" alt="Producto4">
           SSD 1TB
         </li>
 
-        <li 
-          data-nombre="SSD 2TB" 
-          data-img="/public/img/p5.png" 
-          data-precio="250000" 
-          data-caracteristicas="Almacenamiento SSD de 2TB."
-          data-descripcion="El SSD de 2TB es una opción ideal para quienes necesitan mucho espacio de almacenamiento. Con su velocidad y capacidad puedes disfrutar de un rendimiento excepcional en tus tareas diarias y juegos. ">
+        <li data-nombre="SSD 2TB" data-img="/public/img/p5.png" data-precio="250000" data-caracteristicas="..." data-descripcion="...">
           <img src="/public/img/p5.png" alt="Producto5">
           SSD 2TB
         </li>
 
-        <li 
-          data-nombre="SSD 4TB" 
-          data-img="/public/img/p6.png" 
-          data-precio="329000" 
-          data-caracteristicas="Almacenamiento SSD de 4TB."
-          data-descripcion="El SSD de 4TB es una opción premium para quienes buscan un rendimiento excepcional y una gran capacidad de almacenamiento. Ideal para gamers y profesionales que requieren velocidad y espacio. ">
+        <li data-nombre="SSD 4TB" data-img="/public/img/p6.png" data-precio="329000" data-caracteristicas="..." data-descripcion="...">
           <img src="/public/img/p6.png" alt="Producto6">
           SSD 4TB
         </li>
-        
-        <!-- Y así con los demás productos... -->
       </ul>
+
     </section>
+
   </main>
 
+  <!-- =================== Footer =================== -->
   <footer>
     <div class="rectangulo-footer">
-        <nav class="redes-sociales">
-            <a href="/contactanos/contactanos.html">
-                <img src="/public/redes/bxl-facebook-circle.svg" alt="Facebook">
-                <span>Facebook</span>
-            </a>
-            <a href="/contactanos/contactanos.html">
-                <img src="/public/redes/bxl-instagram-alt.svg" alt="Instagram">
-                <span>Instagram</span>
-            </a>
-            <a href="/contactanos/contactanos.html">
-                <img src="/public/redes/bxl-linkedin-square.svg" alt="LinkedIn">
-                <span>LinkedIn</span>
-            </a>
-            <a href="/contactanos/contactanos.html">
-                <img src="/public/redes/bxl-whatsapp-square.svg" alt="WhatsApp">
-                <span>WhatsApp</span>
-            </a>
-        </nav>
+      <nav class="redes-sociales">
+        <a href="/contactanos/contactanos.html">
+          <img src="/public/redes/bxl-facebook-circle.svg" alt="Facebook">
+          <span>Facebook</span>
+        </a>
+        <a href="/contactanos/contactanos.html">
+          <img src="/public/redes/bxl-instagram-alt.svg" alt="Instagram">
+          <span>Instagram</span>
+        </a>
+        <a href="/contactanos/contactanos.html">
+          <img src="/public/redes/bxl-linkedin-square.svg" alt="LinkedIn">
+          <span>LinkedIn</span>
+        </a>
+        <a href="/contactanos/contactanos.html">
+          <img src="/public/redes/bxl-whatsapp-square.svg" alt="WhatsApp">
+          <span>WhatsApp</span>
+        </a>
+      </nav>
     </div>
+
     <div class="pie-footer">
       <p>2025 Artículos Tecnológicos 21.</p>
-      </div>
-</footer>
-<script src="/productos/detallePerfil/detallePerfilScript.js"></script>
+    </div>
+  </footer>
+
+  <!-- =================== Scripts =================== -->
+  <script src="/productos/detallePerfil/detallePerfilScript.js"></script>
+  
 </body>
 </html>

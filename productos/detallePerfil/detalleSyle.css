@@ -1,225 +1,245 @@
-/* === VARIABLES GLOBALES tomadas de la paleta de colores */
+/* ============================================================
+   VARIABLES GLOBALES (Paleta de colores)
+=============================================================== */
 :root {
-    --gris-claro: #DEDEE4;       /* Color de fondo principal */
-    --azul-principal: #456990;   /* Color de fondo para panel izquierdo */
-    --gris-oscuro: #222;         /* Color del footer y botones */
-    --blanco: #ffffff;           /* Color base blanco */
-  }
-  
-  /* === ESTILOS GENERALES === */
-  body {
-    margin: 0;
-    font-family: 'Inknut Antiqua', serif;
-    background-color: var(--gris-claro);
-  }
-  
-  /* === HEADER === */
-  header img {
-    width: 100%;             /* Imagen cubre todo el ancho */
-    height: 400px;           /* Altura fija */
-    object-fit: cover;       /* Mantiene proporciones sin distorsión */
-    display: block;          /* Elimina espacio extra */
-  }
-  
-  /* === CONTENEDOR PRINCIPAL === */
-  .contenedor {
-    display: flex;
-    min-height: 90vh;        /* Altura mínima de 90% del viewport */
-  }
-  
-  /* === PANEL IZQUIERDO === */
-  .panel-izquierdo {
-    flex: 1;
-    padding: 2rem;
-    background-color: var(--azul-principal);
-    color: var(--blanco);
-  }
-  
-  .avatar {
-    width: 100px;
-    border-radius: 50%;       /* Imagen redonda */
-    margin-bottom: 1rem;
-  }
-  
-  /* === FORMULARIO === */
-  .panel-izquierdo form {
-    display: flex;
-    flex-direction: column;
-  }
-  
-  .panel-izquierdo form label {
-    font-weight: bold;
-    margin-top: 1rem;
-  }
-  
-  .panel-izquierdo form input {
-    width: 100%;
-    padding: 0.6rem;
-    border-radius: 8px;
-    border: 1px solid #ccc;
-    font-size: 1rem;
-    transition: all 0.3s ease;
-    margin-bottom: 1rem;
-  }
-  
-  .panel-izquierdo form input:focus {
-    outline: none;
-    border-color: var(--blanco);
-    box-shadow: 0 0 5px var(--blanco);
-    background-color: #f9f9f9;
-  }
-  
-  .panel-izquierdo button {
-    background-color: var(--gris-oscuro);
-    color: var(--blanco);
-    border: none;
-    padding: 0.8rem;
-    border-radius: 8px;
-    font-weight: bold;
-    cursor: pointer;
-    margin-top: 1rem;
-    transition: background-color 0.3s ease;
-  }
-  
-  .panel-izquierdo button:hover {
-    background-color: #333;
-  }
-  
-  /* === SECCIÓN OPCIONES === */
-  .opciones {
-    margin-top: 2rem;
-    background-color: #ffffff;
-    padding: 1.5rem;
-    border-radius: 15px;
-    box-shadow: 0 3px 10px rgba(0,0,0,0.1);
-  }
-  
-  .opciones h3 {
-    font-size: 1.1rem;
-    margin-bottom: 0.5rem;
-    color: #2a9d8f;
-    border-bottom: 1px solid #ccc;
-    padding-bottom: 0.3rem;
-  }
-  
-  .opciones label {
-    display: flex;
-    align-items: center;
-    margin: 0.5rem 0;
-    font-size: 0.95rem;
-    gap: 0.5rem;
-    color: #333;
-  }
-  
-  .opciones input[type="checkbox"] {
-    accent-color: #2a9d8f;
-    width: 18px;
-    height: 18px;
-  }
-  
-  /* === PANEL DERECHO === */
-  .panel-derecho {
-    flex: 2;
-    padding: 2rem;
-    background-color: var(--blanco);
-  }
-  
-  /* === FILTROS === */
-  .filtros {
-    background-color: #ffffff;
-    padding: 1.5rem;
-    border-radius: 15px;
-    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
-    margin-bottom: 2rem;
-  }
-  
-  .filtros h4 {
-    margin-top: 1rem;
-    color: #2a9d8f;
-    font-size: 1.1rem;
-    border-bottom: 1px solid #ddd;
-    padding-bottom: 0.3rem;
-  }
-  
-  .filtros label {
-    display: flex;
-    align-items: center;
-    margin: 0.3rem 0;
-    gap: 0.5rem;
-    font-size: 0.95rem;
-    color: #333;
-  }
-  
-  .filtros input[type="checkbox"] {
-    accent-color: #2a9d8f;
-    width: 18px;
-    height: 18px;
-  }
-  
-  .filtros select {
-    width: 100%;
-    padding: 0.4rem;
-    border-radius: 8px;
-    border: 1px solid #ccc;
-    margin-top: 0.5rem;
-    font-size: 0.95rem;
-  }
-  
-  /* === PRODUCTOS === */
-  .productos {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-    gap: 1rem;
-    list-style: none;
-    padding: 0;
-    margin-top: 1rem;
-  }
-  
-  .productos li {
-    background-color: #fff;
-    padding: 1rem;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0,0,0,0.1);
-    text-align: center;
-    font-weight: bold;
-    color: var(--gris-oscuro);
-    transition: transform 0.2s ease;
-  }
-  
-  .productos li:hover {
-    transform: scale(1.05);
-  }
-  
-  .productos li img {
-    width: 100%;
-    max-height: 120px;
-    object-fit: cover;
-    border-radius: 8px;
-    margin-bottom: 0.5rem;
-  }
-  
-  /* === FOOTER === */
- /* Rectángulo del footer */
+  --gris-claro: #DEDEE4;        /* Color de fondo principal */
+  --azul-principal: #456990;    /* Color para panel izquierdo */
+  --gris-oscuro: #222;          /* Color para botones y footer */
+  --blanco: #ffffff;            /* Color base blanco */
+}
+
+/* ============================================================
+   ESTILOS GENERALES
+=============================================================== */
+body {
+  margin: 0;
+  font-family: 'Inknut Antiqua', serif;
+  background-color: var(--gris-claro);
+}
+
+/* ============================================================
+   HEADER (Imagen principal)
+=============================================================== */
+header img {
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+  display: block;
+}
+
+/* ============================================================
+   CONTENEDOR PRINCIPAL (Main)
+=============================================================== */
+.contenedor {
+  display: flex;
+  min-height: 90vh; /* Altura mínima de 90% de la pantalla */
+}
+
+/* ============================================================
+   PANEL IZQUIERDO (Perfil de usuario)
+=============================================================== */
+.panel-izquierdo {
+  flex: 1;
+  padding: 2rem;
+  background-color: var(--azul-principal);
+  color: var(--blanco);
+}
+
+/* Avatar de usuario */
+.avatar {
+  width: 100px;
+  border-radius: 50%;
+  margin-bottom: 1rem;
+}
+
+/* ============================================================
+   FORMULARIO DE PERFIL
+=============================================================== */
+.panel-izquierdo form {
+  display: flex;
+  flex-direction: column;
+}
+
+.panel-izquierdo form label {
+  font-weight: bold;
+  margin-top: 1rem;
+}
+
+.panel-izquierdo form input {
+  width: 100%;
+  padding: 0.6rem;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  font-size: 1rem;
+  margin-bottom: 1rem;
+  transition: all 0.3s ease;
+}
+
+.panel-izquierdo form input:focus {
+  outline: none;
+  border-color: var(--blanco);
+  box-shadow: 0 0 5px var(--blanco);
+  background-color: #f9f9f9;
+}
+
+/* Botón actualizar perfil */
+.panel-izquierdo button {
+  background-color: var(--gris-oscuro);
+  color: var(--blanco);
+  border: none;
+  padding: 0.8rem;
+  border-radius: 8px;
+  font-weight: bold;
+  cursor: pointer;
+  margin-top: 1rem;
+  transition: background-color 0.3s ease;
+}
+
+.panel-izquierdo button:hover {
+  background-color: #333;
+}
+
+/* ============================================================
+   SECCIÓN OPCIONES (Mis compras / Datos del perfil)
+=============================================================== */
+.opciones {
+  margin-top: 2rem;
+  background-color: #ffffff;
+  padding: 1.5rem;
+  border-radius: 15px;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+}
+
+.opciones h3 {
+  font-size: 1.1rem;
+  margin-bottom: 0.5rem;
+  color: #2a9d8f;
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 0.3rem;
+}
+
+.opciones label {
+  display: flex;
+  align-items: center;
+  margin: 0.5rem 0;
+  font-size: 0.95rem;
+  gap: 0.5rem;
+  color: #333;
+}
+
+.opciones input[type="checkbox"] {
+  accent-color: #2a9d8f;
+  width: 18px;
+  height: 18px;
+}
+
+/* ============================================================
+   PANEL DERECHO (Filtros + Productos)
+=============================================================== */
+.panel-derecho {
+  flex: 2;
+  padding: 2rem;
+  background-color: var(--blanco);
+}
+
+/* Sección de filtros */
+.filtros {
+  background-color: #ffffff;
+  padding: 1.5rem;
+  border-radius: 15px;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+  margin-bottom: 2rem;
+}
+
+.filtros h4 {
+  margin-top: 1rem;
+  color: #2a9d8f;
+  font-size: 1.1rem;
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 0.3rem;
+}
+
+.filtros label {
+  display: flex;
+  align-items: center;
+  margin: 0.3rem 0;
+  gap: 0.5rem;
+  font-size: 0.95rem;
+  color: #333;
+}
+
+.filtros input[type="checkbox"] {
+  accent-color: #2a9d8f;
+  width: 18px;
+  height: 18px;
+}
+
+.filtros select {
+  width: 100%;
+  padding: 0.4rem;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  margin-top: 0.5rem;
+  font-size: 0.95rem;
+}
+
+/* ============================================================
+   LISTADO DE PRODUCTOS
+=============================================================== */
+.productos {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 1rem;
+  list-style: none;
+  padding: 0;
+  margin-top: 1rem;
+}
+
+.productos li {
+  background-color: #fff;
+  padding: 1rem;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  text-align: center;
+  font-weight: bold;
+  color: var(--gris-oscuro);
+  transition: transform 0.2s ease;
+}
+
+.productos li:hover {
+  transform: scale(1.05);
+}
+
+.productos li img {
+  width: 100%;
+  max-height: 120px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 0.5rem;
+}
+
+/* ============================================================
+   FOOTER
+=============================================================== */
 .rectangulo-footer {
-  width: 1215px;
+  width: 90%;
+  max-width: 1215px;
   height: 148px;
-  background-color: #559BFE; /* Azul */
-  margin: 20px auto; /* Centrado horizontal */
-  border-radius: 20px; /* Bordes curvos */
+  background-color: #559BFE;
+  margin: 20px auto;
+  border-radius: 20px;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-/* Contenedor de redes sociales */
 .redes-sociales {
   display: flex;
-  justify-content: space-around; /* Distribuye los botones */
+  justify-content: space-around;
   align-items: center;
   width: 80%;
 }
 
-/* Estilos de los enlaces */
 .redes-sociales a {
   text-decoration: none;
   color: #002355;
@@ -231,46 +251,56 @@
   align-items: center;
 }
 
-/* Estilos de las imágenes */
 .redes-sociales img {
-  width: 50px; /* Tamaño de los íconos */
+  width: 50px;
   height: 50px;
   margin-bottom: 5px;
   transition: transform 0.3s ease-in-out;
 }
 
-/* Efecto hover */
 .redes-sociales a:hover img {
-  transform: scale(1.1); /* Hace el ícono más grande al pasar el mouse */
+  transform: scale(1.1);
 }
 
-/* Estilo para el pie de página */
+/* Pie de página */
 .pie-footer {
   background-color: #559BFE;
-  color: #002355; /* Color del texto */
-  font-weight: bold; /* Negrita para el texto */
-  text-decoration: underline; /* Subraya el texto */
-  padding: 20px 10px; /* Espacio interno del pie de página */
-  text-align: center; /* Centra el texto */
-  font-size: 14px; /* Tamaño del texto */
-  margin: 5px 0; /* Espacio entre el pie de página y otros elementos */
-  border-radius: 10px; /* Bordes redondeados */   
+  color: #002355;
+  font-weight: bold;
+  text-decoration: underline;
+  padding: 20px 10px;
+  text-align: center;
+  font-size: 14px;
+  margin: 5px 0;
+  border-radius: 10px;
 }
 
-/* Media query para pantallas pequeñas */
+/* ============================================================
+   RESPONSIVE (Pantallas pequeñas)
+=============================================================== */
 @media (max-width: 768px) {
-  /* Estilos para pantallas pequeñas (móviles) */
   header img {
-    height: 200px; /* Reduce la altura de la imagen del encabezado */
-}
+    height: 200px;
+  }
+
   .rectangulo-footer {
-    width: 100%; /* El rectángulo ocupa todo el ancho */
-    height: auto; /* Ajusta la altura automáticamente */
-    border-radius: 10px; /* Reduce el redondeo */
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+  }
+
+  .redes-sociales {
+    flex-direction: column;
+    gap: 10px;
+  }
 }
-.redes-sociales {
-    flex-direction: column; /* Cambia los enlaces a una columna */
-    gap: 10px; /* Espacio entre los enlaces */
+
+/* ============================================================
+   ICONO DE FILTRO
+=============================================================== */
+.icono-filtro {
+  width: 30px;
+  height: 30px;
+  margin-right: 0.9rem;
+  vertical-align: middle;
 }
-}
-  
